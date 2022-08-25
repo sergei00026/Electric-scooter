@@ -1,0 +1,14 @@
+// Заголовки, общие БЄМ блоки и проче...
+.btn {
+	background: var(--main-color-text);
+	border-radius: 65px;
+	min-height: 54px;
+	padding: 5px 35px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 150%;
+	color: var(--color-black);
+}
