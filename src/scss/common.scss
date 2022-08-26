@@ -12,3 +12,16 @@
 	line-height: 150%;
 	color: var(--color-black);
 }
+.title {
+	font-weight: 500;
+	@include adaptiveValue("font-size", 45, 25);
+	line-height: 110%;
+	color: var(--main-color-text);
+	&:not(:last-child) {
+		@include adaptiveValue("margin-bottom", 70, 40);
+	}
+	// .title__red
+	&__red {
+		color: var(--color-red);
+	}
+}
