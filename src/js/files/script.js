@@ -20,7 +20,7 @@ document.addEventListener("click", function (e) {
 });
 
 
-// Табы
+// Табы № 1
 
 const descriptionPageTabTitle = document.querySelectorAll('.description-page__tab-title');
 
@@ -61,5 +61,52 @@ window.addEventListener('resize', function () {
 		descriptionPageImages[0].classList.remove('_active');
 		descriptionPageImages[1].classList.remove('_active');
 		descriptionPageImages[2].classList.remove('_active');
+	}
+});
+
+
+// Табы № 2
+
+const safetyPageTabTitle = document.querySelectorAll('.safety-page__tab-title');
+
+const safetyPageTabBody = document.querySelectorAll('.safety-page__tab-body');
+
+const safetyPageImages = document.querySelectorAll('.safety-page__image');
+
+safetyPageTabTitle.forEach((element, index) => {
+	element.addEventListener("click", (e) => {
+		if (!safetyPageTabTitle[index].closest('._active')) {
+			safetyPageTabTitle[index].classList.add('_active');
+			safetyPageTabBody[index].classList.add('_active');
+			safetyPageImages[index].classList.add('_active');
+
+			safetyPageTabTitle.forEach((el, ind) => {
+				if (ind != index) {
+					safetyPageTabTitle[ind].classList.remove('_active');
+					safetyPageTabBody[ind].classList.remove('_active');
+					safetyPageImages[ind].classList.remove('_active');
+
+				}
+			});
+
+		} else {
+			safetyPageTabTitle[index].classList.remove('_active');
+		}
+	});
+});
+
+window.addEventListener('resize', function () {
+	if (window.innerWidth <= 768) {
+		// 0...768
+		safetyPageImages[0].classList.add('_active');
+		safetyPageImages[1].classList.add('_active');
+		safetyPageImages[2].classList.add('_active');
+		safetyPageImages[3].classList.add('_active');
+	} else {
+		// 769...Inf
+		safetyPageImages[0].classList.remove('_active');
+		safetyPageImages[1].classList.remove('_active');
+		safetyPageImages[2].classList.remove('_active');
+		safetyPageImages[3].classList.remove('_active');
 	}
 });

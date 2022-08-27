@@ -11,6 +11,10 @@
 	font-size: 16px;
 	line-height: 150%;
 	color: var(--color-black);
+	&__red {
+		background: var(--color-red);
+		color: var(--main-color-text);
+	}
 }
 .title {
 	font-weight: 500;
@@ -24,4 +28,12 @@
 	&__red {
 		color: var(--color-red);
 	}
+}
+.circle {
+	background: #fc7c1f;
+	opacity: 0.2;
+	filter: blur(280px);
+	width: 850px;
+	height: 850px;
+	position: absolute;
 }
