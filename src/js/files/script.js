@@ -110,3 +110,46 @@ window.addEventListener('resize', function () {
 		safetyPageImages[3].classList.remove('_active');
 	}
 });
+
+
+//radiobutton
+
+const radio = document.querySelectorAll('.first-page__radio');
+
+radio.forEach(element => {
+	element.addEventListener("click", function (e) {
+		if (radio[0].checked) {
+			document.body.classList.add('white');
+		} else {
+			document.body.classList.remove('white');
+		}
+	});
+});
+
+if (radio[0].checked) {
+	document.body.classList.add('white');
+} else {
+	document.body.classList.remove('white');
+
+
+}
+
+const radio2 = document.querySelectorAll('.set-page__radio');
+
+radio2.forEach(element => {
+	element.addEventListener("click", function (e) {
+		if (radio2[0].checked) {
+			document.body.classList.add('white');
+		} else {
+			document.body.classList.remove('white');
+		}
+	});
+});
+
+if (radio2[0].checked) {
+	document.body.classList.add('white');
+} else {
+	document.body.classList.remove('white');
+
+
+}

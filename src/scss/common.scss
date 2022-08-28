@@ -30,10 +30,118 @@
 	}
 }
 .circle {
-	background: #fc7c1f;
+	background: #fc501f;
 	opacity: 0.2;
 	filter: blur(280px);
-	width: 850px;
-	height: 850px;
+	@include adaptiveValue("width", 850, 400);
+	@include adaptiveValue("height", 850, 400);
 	position: absolute;
+	border-radius: 50%;
+}
+//==============================
+.first-page {
+	// .first-page__radiobox
+	&__radiobox {
+		display: flex;
+		align-items: center;
+		width: 248px;
+		height: 54px;
+		border-radius: 65px;
+		border: 3px solid var(--main-color-text);
+		position: relative;
+		overflow: hidden;
+	}
+	// .first-page__radio
+	&__radio {
+		display: none;
+		&_1 {
+			&:checked {
+				& ~ .first-page__label_1 {
+					background: var(--main-color-text);
+					color: var(--color-black);
+				}
+			}
+		}
+		&_2 {
+			&:checked {
+				& ~ .first-page__label_2 {
+					color: var(--main-color-text);
+					background: var(--color-black);
+				}
+			}
+		}
+	}
+
+	// .first-page__label
+	&__label {
+		transition: all 0.5s ease 0s;
+		cursor: pointer;
+		flex: 0 0 50%;
+		min-height: 100%;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 150%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&_1 {
+		}
+		// .first-page__label_2
+		&_2 {
+		}
+	}
+}
+// ========================================
+//==============================
+.set-page {
+	// .set-page__radiobox
+	&__radiobox {
+		display: flex;
+		align-items: center;
+		width: 248px;
+		height: 54px;
+		border-radius: 65px;
+		border: 3px solid var(--main-color-text);
+		position: relative;
+		overflow: hidden;
+	}
+	// .set-page__radio
+	&__radio {
+		display: none;
+		&_1 {
+			&:checked {
+				& ~ .set-page__label_1 {
+					background: var(--main-color-text);
+					color: var(--color-black);
+				}
+			}
+		}
+		&_2 {
+			&:checked {
+				& ~ .set-page__label_2 {
+					color: var(--main-color-text);
+					background: var(--color-black);
+				}
+			}
+		}
+	}
+
+	// .set-page__label
+	&__label {
+		transition: all 0.5s ease 0s;
+		cursor: pointer;
+		flex: 0 0 50%;
+		min-height: 100%;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 150%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&_1 {
+		}
+		// .set-page__label_2
+		&_2 {
+		}
+	}
 }

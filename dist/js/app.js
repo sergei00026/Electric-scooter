@@ -3954,6 +3954,20 @@
             safetyPageImages[3].classList.remove("_active");
         }
     }));
+    const script_radio = document.querySelectorAll(".first-page__radio");
+    script_radio.forEach((element => {
+        element.addEventListener("click", (function(e) {
+            if (script_radio[0].checked) document.body.classList.add("white"); else document.body.classList.remove("white");
+        }));
+    }));
+    if (script_radio[0].checked) document.body.classList.add("white"); else document.body.classList.remove("white");
+    const radio2 = document.querySelectorAll(".set-page__radio");
+    radio2.forEach((element => {
+        element.addEventListener("click", (function(e) {
+            if (radio2[0].checked) document.body.classList.add("white"); else document.body.classList.remove("white");
+        }));
+    }));
+    if (radio2[0].checked) document.body.classList.add("white"); else document.body.classList.remove("white");
     window["FLS"] = true;
     isWebp();
     tabs();

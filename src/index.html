@@ -11,15 +11,18 @@
 					<div class="first-page__container">
 						<h1 class="first-page__heading">Стильный электросамокат с мощным аккумулятором</h1>
 						<h2 class="first-page__sub-heading">Улучшенная производительность для дальних путешествий. Работает так же просто, как и выглядит.</h2>
-						<div class="checkbox">
-							<input id="c_1" class="checkbox__input" type="checkbox" value="1">
-							<label for="c_1" class="checkbox__label"><span class="checkbox__text">Текст</span></label>
+						<div class="first-page__radiobox">
+							<input type="radio" name="one" id="01" class="first-page__radio first-page__radio_1" checked>
+							<input type="radio" name="one" id="02" class="first-page__radio first-page__radio_2">
+							<label class="first-page__label first-page__label_1" for="01">Белый</label>
+							<label class="first-page__label first-page__label_2" for="02">Черный</label>
 						</div>
 					</div>
 					<div class="first-page__img">
 						<img src="@img/header/bike.png" alt="bike">
 					</div>
 					<div class="first-page__circle circle"></div>
+					<div class="first-page__circle_2 circle"></div>
 				</section>
 				<section class="page__description description-page">
 					<div class="description-page__container">
@@ -50,6 +53,8 @@
 							</div>
 						</div>
 					</div>
+					<div class="description-page__circle circle"></div>
+					<div class="description-page__circle_2 circle"></div>
 				</section>
 				<section class="page__speed speed-page">
 					<div class="speed-page__container">
@@ -64,6 +69,8 @@
 						</div>
 					</div>
 					<img class="speed-page__img" src="@img/speed/bg.jpg" alt="bg">
+					<div class="speed-page__circle circle"></div>
+					<img class="speed-page__decor" src="@img/speed/decor.svg" alt="decor">
 				</section>
 				<section class="page__desing desing-page">
 					<div class="desing-page__container">
@@ -84,6 +91,9 @@
 							</div>
 						</div>
 					</div>
+					<div class="desing-page__circle circle"></div>
+					<div class="desing-page__circle_2 circle"></div>
+					<img class="desing-page__decor" src="@img/desing/decor.svg" alt="desing">
 				</section>
 				<section class="page__safety safety-page">
 					<div class="safety-page__container">
@@ -121,6 +131,7 @@
 							</div>
 						</div>
 					</div>
+					<div class="safety-page__circle circle"></div>
 				</section>
 				<section class="page__application application-page">
 					<div class="application-page__container">
@@ -142,6 +153,7 @@
 							</div>
 						</div>
 					</div>
+					<div class="application-page__circle circle"></div>
 				</section>
 				<section class="page__about-brand aboutbrand-page">
 					<div class="aboutbrand-page__container">
@@ -204,6 +216,9 @@
 							</div>
 						</div>
 					</div>
+					<div class="reviews-page__circle circle"></div>
+					<img class="desing-page__decor" src="@img/desing/decor.svg" alt="desing">
+
 				</section>
 				<section class="page__questions questions-page">
 					<div class="questions-page__container">
@@ -234,36 +249,44 @@
 							</div>
 						</div>
 					</div>
+					<div class="questions-page__circle circle"></div>
 				</section>
 				<section class="page__set set-page">
-					<div class="set-page__container">
-						<div class="set-page__body">
-							<div class="set-page__left">
-								<h2 class="set-page__title title">Mi Electric Scooter Pro 2</h2>
-								<div class="set-page__subtitle">54 990 ₽</div>
-								<div class="set-page__checkbox checkbox">
-									<input id="c_1" class="checkbox__input" type="checkbox" value="1">
-									<label for="c_1" class="checkbox__label"><span class="checkbox__text">Текст</span></label>
-								</div>
-								<img src="@img/set/bike.png" alt="bike" class="set-page__img-dn">
+					<div class="page-set__box">
+						<div class="set-page__container">
+							<img class="set-page__decor" src="@img/set/decor.svg" alt="decor">
+							<div class="set-page__body">
 
-								<button type="submit" class="set-page__btn btn btn__red">Купить</button>
-							</div>
-							<div class="set-page__right">
-								<div class="set-page__heading">Комплект поставки</div>
-								<ul>
-									<li class="set-page__text">Адаптер питания</li>
-									<li class="set-page__text">Шестигранный ключ</li>
-									<li class="set-page__text">Удлинитель для насоса</li>
-									<li class="set-page__text">Винты x 5 шт.</li>
-									<li class="set-page__text">Запасная шина</li>
-									<li class="set-page__text">Руководство пользователя</li>
-									<li class="set-page__text">Буклет с информацией</li>
-								</ul>
+								<div class="set-page__left">
+									<h2 class="set-page__title title">Mi Electric Scooter Pro 2</h2>
+									<div class="set-page__subtitle">54 990 ₽</div>
+									<div class="set-page__radiobox">
+										<input checked type="radio" name="one2" id="03" class="set-page__radio set-page__radio_1">
+										<input type="radio" name="one2" id="04" class="set-page__radio set-page__radio_2">
+										<label class="set-page__label set-page__label_1" for="03">Белый</label>
+										<label class="set-page__label set-page__label_2" for="04">Черный</label>
+									</div>
+									<img src="@img/set/bike.png" alt="bike" class="set-page__img-dn">
+
+									<button type="submit" class="set-page__btn btn btn__red">Купить</button>
+								</div>
+								<div class="set-page__right">
+									<div class="set-page__heading">Комплект поставки</div>
+									<ul>
+										<li class="set-page__text">Адаптер питания</li>
+										<li class="set-page__text">Шестигранный ключ</li>
+										<li class="set-page__text">Удлинитель для насоса</li>
+										<li class="set-page__text">Винты x 5 шт.</li>
+										<li class="set-page__text">Запасная шина</li>
+										<li class="set-page__text">Руководство пользователя</li>
+										<li class="set-page__text">Буклет с информацией</li>
+									</ul>
+								</div>
 							</div>
 						</div>
+						<img src="@img/set/bike.png" alt="bike" class="set-page__img">
 					</div>
-					<img src="@img/set/bike.png" alt="bike" class="set-page__img">
+
 				</section>
 			</main>
 			@@include('html/_footer.htm',{})
