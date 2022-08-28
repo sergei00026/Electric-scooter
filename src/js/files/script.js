@@ -126,13 +126,7 @@ radio.forEach(element => {
 	});
 });
 
-if (radio[0].checked) {
-	document.body.classList.add('white');
-} else {
-	document.body.classList.remove('white');
 
-
-}
 
 const radio2 = document.querySelectorAll('.set-page__radio');
 
@@ -146,10 +140,3 @@ radio2.forEach(element => {
 	});
 });
 
-if (radio2[0].checked) {
-	document.body.classList.add('white');
-} else {
-	document.body.classList.remove('white');
-
-
-}
