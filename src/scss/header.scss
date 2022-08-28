@@ -34,6 +34,9 @@
 			left: 0;
 			background: rgba(0, 0, 0, 0.8);
 			z-index: 5;
+			& .header__link {
+				color: #f1f1f1;
+			}
 		}
 		// stroke-width: ;
 	}
@@ -69,7 +72,6 @@
 	}
 	// .header__link
 	&__link {
-		color: #f1f1f1;
 	}
 	// .header__btn
 	&__btn {

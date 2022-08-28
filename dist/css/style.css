@@ -409,6 +409,10 @@ h6 {
   z-index: 5;
 }
 
+.menu-open .header__menu .header__link {
+  color: #f1f1f1;
+}
+
 .header__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -425,10 +429,6 @@ h6 {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-}
-
-.header__link {
-  color: #f1f1f1;
 }
 
 .icon-menu {
